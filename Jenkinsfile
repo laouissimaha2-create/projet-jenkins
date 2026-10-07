@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('run') {
             steps {
+                sh 'javac bvs.java'
                 sh 'java bvs'
             }
         }
